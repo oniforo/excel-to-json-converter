@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>Upload Excel File</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='upload.css') }}"/>
+</head>
+<body>
+    <main>
+        <h1>Upload an Excel file</h1>
+        <form method="post" action="/upload" enctype="multipart/form-data">
+            <label class="custom-file-upload">
+                <img src="{{ url_for('static', filename='upload.png') }}" alt="Upload Icon" class="upload-icon">
+                <input type="file" name="file"/>
+            </label>
+            <input type="submit" value="UPLOAD"/>
+        </form>
+    </main>
+</body>
