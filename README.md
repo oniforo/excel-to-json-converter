@@ -1,5 +1,8 @@
 # Excel to JSON Converter
 
+[![Build Status](https://img.shields.io/github/actions/workflow/status/oniforo/excel-to-json-converter/pylint.yml?style=flat-square)](https://github.com/oniforo/excel-to-json-converter/actions)
+[![License](https://img.shields.io/github/license/oniforo/excel-to-json-converter?style=flat-square)](https://github.com/oniforo/excel-to-json-converter/blob/main/LICENSE)
+
 A small Flask web app that converts an uploaded `.xlsx` spreadsheet into JSON. Upload a file through the browser and get back its rows as a JSON array of records.
 
 ## How it works
@@ -9,7 +12,7 @@ A small Flask web app that converts an uploaded `.xlsx` spreadsheet into JSON. U
 
 ## Requirements
 
-- Python 3.10
+- Python 3.8, 3.9, or 3.10 (tested versions, see the [Pylint workflow](.github/workflows/pylint.yml))
 - Dependencies listed in `requirements.txt` (Flask, pandas, openpyxl, python-dotenv, and their transitive dependencies)
 
 ## Setup
